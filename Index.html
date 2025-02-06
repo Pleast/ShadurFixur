@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Shadur Fixur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <h2>INPUT</h2>
+            <textarea id="inputShader" placeholder="Paste your shader code here..."></textarea>
+            <label><input type="checkbox" id="blitCheckbox"> Blit Shader</label>
+            <label>
+                <input type="checkbox" id="alphaCheckbox"> 0 Alpha
+            </label>
+            <button id="convertButton">Convert</button>
+        </div>
+        <div class="section">
+            <h2>OUTPUT</h2>
+            <div class="output-container">
+                <textarea id="outputShader" placeholder="Converted shader code will appear here..." readonly></textarea>
+                <button id="copyButton">Copy</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="resources-section">
+        <h2>USEFUL RESOURCES</h2>
+        <ul>
+            <li><a href="https://docs.unity3d.com/Manual/SinglePassInstancing.html" target="_blank">Mesh Instancing</a></li>
+            <li><a href="https://docs.unity3d.com/2018.1/Documentation/Manual/SinglePassInstancing.html" target="_blank">Making Shaders VR Compatible</a></li>
+            <li><a href="https://www.shadertoy.com/" target="_blank">ShaderToy</a></li>
+            <li><a href="https://pema.dev/glsl2hlsl/" target="_blank">ShaderToy 2 Unity</a></li>
+        </ul>
+        <div class="note">
+            Beat Saber's RenderPipeline uses shader's alpha channel as glow, and as a result will make anything above 1 alpha instantly white and glow. If you want alpha completely off with no control of glow, check "0 Alpha" ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  NOTE: this is purely for beginners and is not recommended for long-term support.
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>v0.420.69.0621 | Made By Pleast</p>
+    </div>
+
+    <pre id="log"></pre>
+
+    <script src="script.js"></script>
+</body>
+</html>

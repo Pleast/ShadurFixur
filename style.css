@@ -86,7 +86,22 @@ button:hover {
 }
 
 #copyButton {
+    align-self: center;
+    width: 300px;
     margin-top: 10px;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+
+#copyButton:hover {
+    background-color: #f0f0f0;
+    color: #000000;
 }
 
 #copyButton.copied {
@@ -180,7 +195,6 @@ input[type="checkbox"] {
     pointer-events: none;
 }
 
-/* Log section styling */
 #log {
     position: fixed;
     bottom: 10px;
@@ -188,7 +202,26 @@ input[type="checkbox"] {
     transform: translateX(-50%);
     color: red;
     font-family: monospace;
-    white-space: pre-wrap; /* Preserve whitespace and line breaks */
-    font-size: 14px; /* Adjust font size as needed */
-    padding: 5px; /* Adjust padding as needed */
+    white-space: pre-wrap;
+    font-size: 14px;
+    padding: 5px;
+}
+
+#convertButton {
+    align-self: center;
+    width: 300px;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    text-align: center;
+}
+
+#convertButton:hover {
+    background-color: #f0f0f0;
+    color: #000000;
 }
